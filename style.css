@@ -8,7 +8,7 @@
     background: #FF900E;
     height: 3rem;
     padding: 15px 25px;
-    margin-left: 370px;
+    margin-left: 364px;
     border: 0;
 
 }
@@ -20,10 +20,10 @@
 
 /*---universal*/
 .header {
-    max-width: 1920px;
+    max-width: 1440px;
     height: auto;
     background: rgba(255, 144, 14, 0.10);
-    padding: 20px 240px;
+    padding: 20px 220px;
 }
 
 
@@ -69,7 +69,7 @@ nav li {
 
 .banner {
     max-width: 866px;
-    height: 280px;
+    height: auto;
     margin: 0 auto;
 
 }
@@ -93,19 +93,108 @@ nav li {
     font-weight: 400;
 }
 
-.banner-img img {
-    max-width: 1440px;
-    margin-right: 40px;
+.banner img {
+    padding-right: 240px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 285px;
+    margin-top: 1rem;
+
+}
+
+/*---team section--*/
+.tem-section-container {
+    display: flex;
+    max-width: 82.5rem;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.tem-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+}
+
+.tem-content-container {
+    padding-left: 4rem;
+}
+
+.Quick-list {
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.list2 {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Features {
+    color: #FF900E;
+    font-family: Work Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tem-content-container p {
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+
+}
+
+.btn-second {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #FF900E;
+    height: 3rem;
+    padding: 1rem 1.5rem;
+    border: 0;
 }
 
 /*--media quary for mobile---*/
 @media screen and (max-width:574px) {
-    nav {
+
+    nav,
+    .tem-section-container {
         flex-direction: column;
     }
 
     .header {
         padding: 1rem;
+    }
+
+    .banner,
+    img {
+        max-width: 35rem;
+        padding-left: 1rem;
+    }
+
+    .button-primary {
+        margin-left: 1rem;
+    }
+
+    .tem-img-container {
+        grid-template-columns: 1fr;
     }
 
 
